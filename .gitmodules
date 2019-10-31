@@ -1,0 +1,3 @@
+[submodule "neutron_transport_1d"]
+	path = neutron_transport_1d
+	url = https://github.com/Naktakala/neutron_transport_1d
