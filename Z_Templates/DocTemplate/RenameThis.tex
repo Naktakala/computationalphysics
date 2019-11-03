@@ -1,0 +1,84 @@
+\documentclass[10pt,letterpaper,notitlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+
+\usepackage[left=0.75in, right=0.75in, bottom=1.0in,top=0.75in]{geometry}
+
+\numberwithin{equation}{section}
+
+%============================= Put document title here
+\newcommand{\DOCTITLE}{Your document title
+}  
+
+%============================= Macros for equations
+\newcommand{\beq}{\begin{equation*}
+\begin{aligned}}
+\newcommand{\eeq}{\end{aligned}
+\end{equation*}}
+
+\newcommand{\beqn}{\begin{equation}
+	\begin{aligned}}
+\newcommand{\eeqn}{\end{aligned}
+	\end{equation}}  
+
+
+\begin{document}
+\noindent
+{\LARGE\textbf{\DOCTITLE}}
+\newline
+\newline
+\newline
+\noindent
+{\Large Your name${^1}$, Someone ElsesName$^{1,2}$}
+\newline
+\noindent\rule{\textwidth}{1pt}
+{\small $^1$ Your affiliation.}
+\newline\noindent
+{\small $^2$Other affiliation.}
+\newline
+\newline
+\textbf{Abstract:}\newline\noindent
+The abstract
+\newline
+\newline\noindent
+{\small
+\textbf{Keywords:} error estimation; uncertainty quantification; residual monte carlo}
+
+\section{Introduction}
+The stuff
+
+\begin{equation}
+\mathbf{L}\Psi = q
+\end{equation}
+\newline \noindent
+is solved and an estimated solution, $\tilde{\Psi}$, is computed. The residual, $R$, is given by
+
+\begin{equation}
+R = q - \mathbf{L}\tilde{\Psi}
+\end{equation}
+\newline \noindent
+and can be related to the error as:
+
+\begin{thebibliography}{1}
+    
+    \bibitem{OldRMC} Zhang Y., Morel J.E., {\em Transport Error Estimation via Non-Recursive Residual Monte Carlo}, PHYSOR 2018, April 2018
+    
+    \bibitem{ChiTech} Vermaak J.I.C., {\em $\chi$-Tech: A large-scale scientific simulation engine being developed at Texas A\&M University as part of a research study}, \url{https://github.com/chi-tech/chi-tech}
+    
+    
+\end{thebibliography}
+
+\end{document}

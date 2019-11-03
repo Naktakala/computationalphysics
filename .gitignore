@@ -1,0 +1,7 @@
+venv/
+.idea/
+*.pyc
+*.aux
+*.log
+*.out
+*.synctex.gz
